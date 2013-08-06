@@ -8,15 +8,16 @@
       ;
 
     function next(BREAK, newArr) {
-      if (0 === arr.length || BREAK === forEachAsync.__BREAK) {
+      index += 1;
+
+      if (index === arr.length || BREAK === forEachAsync.__BREAK) {
         dones.forEach(function (done) {
           done.call(thisArg, newArr);
         });
         return;
       }
 
-      index += 1;
-      fn.call(thisArg, next, arr.shift(), index, arr);
+      fn.call(thisArg, next, arr[index], index, arr);
     }
 
     setTimeout(next, 4);
