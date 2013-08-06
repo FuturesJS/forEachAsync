@@ -17,7 +17,17 @@ Usage
 It's as simple as you could guess:
 
 ```javascript
-  // an asynchronous web request
+  // waits for one request to finish before beginning the next
+  forEachAsync(['dogs', 'cats', 'octocats'], function (next, element, index, array) {
+    getPics(element, next);
+  
+  // then after all of the elements have been handled
+  // the final callback fires to let you know it's all done
+  }).then(function () {
+    console.log('All requests have finished');
+  });
+
+  // where `getPics` might be an asynchronous web request such as this
   function getPics(animal, cb) {
     var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     $.getJSON(
@@ -32,16 +42,6 @@ It's as simple as you could guess:
       }
     );
   }
-
-  // waits for one request to finish before beginning the next
-  forEachAsync(['dogs', 'cats', 'octocats'], function (next, element, index, array) {
-    getPics(element, next);
-  
-  // then after all of the elements have been handled
-  // the final callback fires to let you know it's all done
-  }).then(function () {
-    console.log('All requests have finished');
-  });
 ```
 
 
