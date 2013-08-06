@@ -19,7 +19,7 @@ It's as simple as you could guess:
     $.getJSON(
       flickerAPI
     , { tags: thing
-      , tagmode: "any
+      , tagmode: "any"
       , format: "json"
       , success: function (data) {
           console.log('teh animals:', data);
