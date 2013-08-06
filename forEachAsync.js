@@ -7,12 +7,12 @@
       , index = -1
       ;
 
-    function next(BREAK, newArr) {
+    function next(BREAK, result) {
       index += 1;
 
       if (index === arr.length || BREAK === forEachAsync.__BREAK) {
         dones.forEach(function (done) {
-          done.call(thisArg, newArr);
+          done.call(thisArg, result);
         });
         return;
       }
