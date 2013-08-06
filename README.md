@@ -4,7 +4,8 @@ forEachAsync
 As I do every few years, I decided to rewrite FuturesJS.
 This year's remake is extremely lightweight.
 
-v3.0 - Diet Cola Edition (not yet published to npm - and don't worry, v2.x is still supported)
+v3.x - Diet Cola Edition
+(published on npm as beta, so you must use the @3.x - and don't worry, v2.x is still supported)
 
 Analogous to `[].forEach`, but handles items asynchronously with a final callback passed to `then`.
 
