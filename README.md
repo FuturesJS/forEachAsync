@@ -48,10 +48,16 @@ It's as simple as you could guess:
 Browser Installation
 ===
 
-You can download and include `forEachAsync.js`:
+You can install from bower:
 
-```html
-<script src="https://raw.github.com/FuturesJS/forEachAsync/master/forEachAsync.js"></script>
+```bash
+bower install forEachAsync
+```
+
+Or download the raw file from <https://raw.github.com/FuturesJS/forEachAsync/master/forEachAsync.js>:
+
+```bash
+wget https://raw.github.com/FuturesJS/forEachAsync/master/forEachAsync.js
 ```
 
 ```javascript
