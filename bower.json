@@ -8,6 +8,7 @@
   ],
   "description": "A node- and browser-ready async counterpart of Array.prototype.forEach",
   "keywords": [
+    "futuresjs",
     "forEachAsync",
     "forEach",
     "for",
