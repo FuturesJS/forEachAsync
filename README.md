@@ -75,7 +75,7 @@ Or you can build it alongside other libraries:
 
 ```bash
 npm install -g pakmanager
-npm install forEachAsync@3.x --save
+npm install forEachAsync --save
 pakmanager -e browser build
 ```
 
