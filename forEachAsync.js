@@ -1,6 +1,6 @@
 /*jshint -W054 */
-(function (exports) {
-  "use strict";
+;(function (exports) {
+  'use strict';
 
   function forEachAsync(arr, fn, thisArg) {
     var dones = []
