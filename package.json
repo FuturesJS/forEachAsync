@@ -1,5 +1,5 @@
 {
-  "name": "forEachAsync",
+  "name": "foreachasync",
   "version": "3.0.0",
   "description": "A node- and browser-ready async counterpart of Array.prototype.forEach",
   "homepage": "https://github.com/FuturesJS/forEachAsync",
