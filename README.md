@@ -1,15 +1,15 @@
 forEachAsync
 ===
 
-As I do every few years, I decided to rewrite FuturesJS.
-This year's remake is extremely lightweight.
-
-v3.x - Diet Cola Edition
-(published on npm as beta, so you must use the @3.x - and don't worry, v2.x is still supported)
-
 Analogous to `[].forEach`, but handles items asynchronously with a final callback passed to `then`.
 
 This is the most essential piece of the [`ArrayAsync`](https://github.com/FuturesJS/ArrayAsync) package.
+
+v3.x - Diet Cola Edition
+---
+
+As I do every few years, I decided to rewrite FuturesJS.
+This year's remake is extremely lightweight.
 
 Usage
 ===
@@ -131,4 +131,4 @@ Internal API
 
 This is used internally for the purposes of the `ArrayAsync` library.
 
-Please don't `break` stuff; use `someAsync` or `everyAsync` instead.
+Please don't `break` stuff; use [`ArrayAsync`](https://github.com/FuturesJS/ArrayAsync)`.someAsync` or [`ArrayAsync`](https://github.com/FuturesJS/ArrayAsync)`.everyAsync` instead.
