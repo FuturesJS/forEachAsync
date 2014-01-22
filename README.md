@@ -15,6 +15,11 @@ v3.x - Diet Cola Edition
 As I do every few years, I decided to rewrite FuturesJS.
 This year's remake is extremely lightweight.
 
+Screencast
+---
+
+<http://youtu.be/O7egvEz4scA>
+
 Usage
 ===
 
