@@ -11,14 +11,16 @@ window.addEventListener('load', function () {
     ;
 
   log('i', 'item', 'ms');
-  forEachAsync([2, 11, 37, 42], function (next, item, i) {
+  forEachAsync([2, 11, 37, 42], function (item, i) {
     var ms = Math.floor(Math.random() * 1000)
       ;
 
-    setTimeout(function () {
-      log(i, item, ms);
-      next();
-    }, ms);
+    return new Promise(function (resolve) {
+      setTimeout(function () {
+        log(i, item, ms);
+        resolve();
+      }, ms);
+    });
   }).then(function () {
     log('All Done');
   });
