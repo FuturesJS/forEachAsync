@@ -30,7 +30,7 @@
             ret = PromiseA.resolve(result);
           }
 
-          ret.then(function (val) {
+          return ret.then(function (val) {
             if (val === forEachAsync.__BREAK) {
               return PromiseA.reject(new Error('break'));
               //throw new Error('break');
