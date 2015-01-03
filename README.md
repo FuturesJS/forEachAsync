@@ -5,6 +5,9 @@ Analogous to `[].forEach`, but handles items asynchronously with a final callbac
 
 This is the most essential piece of the [`ArrayAsync`](https://github.com/FuturesJS/ArrayAsync) package.
 
+For cases where you want to loop through batches of items at once (as opposed to strictly one-by-one as forEachAsync does), check out [`forAllAsync`](https://github.com/FuturesJS/forAllAsync) and [`lateral`](https://github.com/FuturesJS/lateral).
+
+For cases where you want to loop through all items at once and we able to know when they're all done see [`join`](https://github.com/FuturesJS/join)
 
 v5.x
 ----
@@ -12,6 +15,11 @@ v5.x
 We jumped from 3.x to 5.x because I'm considering creating a backwards-and-forwards compatible 4.x that
 uses AngularJS-style function introspection to allow for having the next param.
 Straight up, that's probably a bad idea and waste of time so I hope I don't actually do it.
+
+Screencast
+---
+
+<http://youtu.be/O7egvEz4scA>
 
 Usage
 -----
