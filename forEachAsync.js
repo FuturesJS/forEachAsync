@@ -65,7 +65,7 @@
   try { 
    exp.forEachAsync = create(require('bluebird'));
   } catch(e) {
-    if ('undefined' !== typeof PromiseA) {
+    if ('undefined' !== typeof Promise) {
       exp.forEachAsync = create(Promise);
     } else {
       try { 
