@@ -74,7 +74,7 @@
         try { 
          exp.forEachAsync = create(require('rsvp'));
         } catch(e) {
-          console.warning('forEachAsync needs requires a promise implementation and your environment does not provide one.'
+          console.warn('forEachAsync needs requires a promise implementation and your environment does not provide one.'
             + '\nYou may provide your own by calling forEachAsync.create(Promise) with a PromiseA+ implementation'
           );
         }
