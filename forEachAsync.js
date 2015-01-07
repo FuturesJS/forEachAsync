@@ -26,7 +26,7 @@
             ret = result = fn(item, k, arr);
           }
 
-          if (!ret.then) {
+          if (!ret || !ret.then) {
             ret = PromiseA.resolve(result);
           }
 
