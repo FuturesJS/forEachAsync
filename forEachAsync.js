@@ -27,7 +27,7 @@
           }
 
           if (!ret || !ret.then) {
-            ret = PromiseA.resolve(result);
+            ret = PromiseA.resolve(ret);
           }
 
           return ret.then(function (val) {
